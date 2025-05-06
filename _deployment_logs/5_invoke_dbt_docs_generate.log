@@ -1,0 +1,8 @@
+19:13:37  Running dbt...
+19:13:38  Found 3 models, 9 data tests, 2 sources, 476 macros
+19:13:38  
+19:13:38
+19:13:38  Concurrency: 4 threads (target='default')
+19:13:38  
+19:13:39  Building catalog
+19:13:41  Catalog written to /tmp/jobs/70471834228242/target/target/catalog.json

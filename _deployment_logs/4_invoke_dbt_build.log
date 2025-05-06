@@ -1,0 +1,40 @@
+19:13:22  Running dbt...
+19:13:23  Unable to do partial parsing because a project dependency has been added
+19:13:24  Found 3 models, 9 data tests, 2 sources, 476 macros
+19:13:24  
+19:13:24
+19:13:24  Concurrency: 4 threads (target='default')
+19:13:24  
+19:13:25  1 of 12 START sql table model dbt_mvelic.stg_customers ......................... [RUN]
+19:13:25  2 of 12 START sql table model dbt_mvelic.stg_orders ............................ [RUN]
+19:13:27  1 of 12 OK created sql table model dbt_mvelic.stg_customers .................... [[32mSUCCESS 1[0m in 1.42s]
+19:13:27  2 of 12 OK created sql table model dbt_mvelic.stg_orders ....................... [[32mSUCCESS 1[0m in 1.42s]
+19:13:27  3 of 12 START test accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned  [RUN]
+19:13:27  4 of 12 START test not_null_stg_customers_customer_id .......................... [RUN]
+19:13:27  5 of 12 START test not_null_stg_orders_customer_id ............................. [RUN]
+19:13:27  6 of 12 START test not_null_stg_orders_order_id ................................ [RUN]
+19:13:27  6 of 12 PASS not_null_stg_orders_order_id ...................................... [[32mPASS[0m in 0.36s]
+19:13:27  7 of 12 START test relationships_stg_orders_customer_id__customer_id__ref_stg_customers_  [RUN]
+19:13:27  5 of 12 PASS not_null_stg_orders_customer_id ................................... [[32mPASS[0m in 0.43s]
+19:13:27  8 of 12 START test unique_stg_customers_customer_id ............................ [RUN]
+19:13:27  4 of 12 PASS not_null_stg_customers_customer_id ................................ [[32mPASS[0m in 0.52s]
+19:13:27  3 of 12 PASS accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned  [[32mPASS[0m in 0.53s]
+19:13:27  9 of 12 START test unique_stg_orders_order_id .................................. [RUN]
+19:13:27  7 of 12 PASS relationships_stg_orders_customer_id__customer_id__ref_stg_customers_  [[32mPASS[0m in 0.19s]
+19:13:27  8 of 12 PASS unique_stg_customers_customer_id .................................. [[32mPASS[0m in 0.18s]
+19:13:27  9 of 12 PASS unique_stg_orders_order_id ........................................ [[32mPASS[0m in 0.16s]
+19:13:27  10 of 12 START sql table model dbt_mvelic.customers ............................ [RUN]
+19:13:28  10 of 12 OK created sql table model dbt_mvelic.customers ....................... [[32mSUCCESS 1[0m in 1.02s]
+19:13:28  11 of 12 START test not_null_customers_customer_id ............................. [RUN]
+19:13:28  12 of 12 START test unique_customers_customer_id ............................... [RUN]
+19:13:29  11 of 12 PASS not_null_customers_customer_id ................................... [[32mPASS[0m in 0.16s]
+19:13:29  12 of 12 PASS unique_customers_customer_id ..................................... [[32mPASS[0m in 0.19s]
+19:13:29  
+19:13:29
+19:13:29  Finished running 3 table models, 9 data tests in 0 hours 0 minutes and 4.77 seconds (4.77s).
+19:13:29  
+19:13:29
+19:13:29  [32mCompleted successfully[0m
+19:13:29  
+19:13:29
+19:13:29  Done. PASS=12 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=12
